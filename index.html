@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Fetch and graph</title>
+    <title>Temperatura a lo largo del tiempo</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
   </head>
   <body>
+    <div class="container">
+    <h1>Incremento de temperatura en los ultimos 120 años.</h1>
+    <h3><i>El calentamiento global demostrado</i></h3><br>
+    <p>Datos obtenidos de la <a href="https://data.giss.nasa.gov/gistemp/" target="_blank">NASA</a>. En el grafico siguiente se muestra la temperatura promedio en grados Celsius desde el año 1880 hasta el año pasado 2018, podemos ver la temperatura promedio en azul, la temperatura del hemisferio sur en azulo y la mas irregular del hemisferio norte en color rojo. </p>
+
     <canvas id="chart" width="300px" height="300px"> </canvas>
+  </div>
     <script>
       chartIt();
       async function chartIt() {
